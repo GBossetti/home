@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GonzaDev</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="row top">
+			<div class="col-md-4"></div>
+			<div class="col-md-3"></div>
+			<div class="col-md-5">
+				<ul class='botonera'>
+					<!--<li><a href="#nosotros" data-ancla="nosotros">Te cuento sobre mí</a></li>
+					<li><a href="https://drive.google.com/file/d/1qRiMnFx57Kuo39SGbOP-AZMq_LNJBs0s/view?usp=sharing" data-ancla="servicios">Mi CV</a></li>-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="principal vertical-centered-text" id="home">
+	<div class="col-md-8 cta"><h1>GONZALO BOSSETTI</h1> 
+			<h4 style="border-bottom-width: 10px;margin-bottom: 20px;">DESARROLLADOR BACKEND</h4>
+			<a  href="https://drive.google.com/file/d/1qRiMnFx57Kuo39SGbOP-AZMq_LNJBs0s/view?usp=sharing" class="btn btn-primary repositorio">CURRICULUM VITAE</a>
+	</div>
+</div>
+
+<div class="container servicios" id="servicios">
+	<div class="row">
+		<div class="col-md-12" style="margin-top: 40px;">
+			<h1>Conocimientos en Programación</h1>
+		</div>
+	</div>
+	<div class="row images">
+		<div class="col-md-3">
+			<img src="images/c++.png" alt="">
+			<h3>C++</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="images/python.png" alt="">
+			<h3>PYTHON</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="images/database.png" alt="">
+			<h3>SQL</h3>
+		</div>
+		<div class="col-md-3">
+			<img src="images/linux.png" alt="">
+			<h3>LINUX</h3>
+		</div>
+	</div>
+	
+</div>
+
+
+<footer>
+	<div class="container" id="redes">
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+		<div class="row social">
+		<div class="col-3"></div>	
+					<div class="col-2">
+						<a href="mailto:gonzalo.bossetti@gmail.com"><img src="images/email.png" alt=""></a></div>
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/gonzalo-bossetti"  target="_blank"><img src="images/linkedin1.png" alt=""></a></div>
+					<div class="col-2">
+						<a target="_blank" href="https://github.com/GBossetti" ><img src="images/github.png" alt=""></a></div>	
+	</div>
+</footer>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<script>
+	// A $( document ).ready() block.
+$(document).ready(function() {    
+$('.top a').click(function(e){
+        e.preventDefault();
+        var offset = $($(this).attr('href')).offset().top;
+        $('html, body').animate({scrollTop:offset}, 600);
+        return false;
+    });
+
+});
+	
+</script>
+</body>
+</html>
